@@ -8,7 +8,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-@ToString
+@ToString(exclude = "stacktrace")
 public class ExceptionModel {	
 	private LocalDateTime timestamp;
 	private String errorMessage;

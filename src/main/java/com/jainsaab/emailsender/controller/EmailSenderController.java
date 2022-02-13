@@ -23,5 +23,6 @@ public class EmailSenderController {
         sendEmailService.sendErrorEmail(request);
         
         log.debug("mail sent");
+        log.warn("mail sent for external-ref-id :: {}", request.getException().getExternalReferenceId());
     }
 }

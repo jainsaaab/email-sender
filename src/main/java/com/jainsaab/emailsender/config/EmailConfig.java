@@ -1,4 +1,4 @@
-package com.jainsaab.emailsender.service.config;
+package com.jainsaab.emailsender.config;
 
 import java.util.Properties;
 
@@ -25,7 +25,7 @@ public class EmailConfig {
 		props.put("mail.transport.protocol", "smtp");
 		props.put("mail.smtp.auth", "true");
 		props.put("mail.smtp.starttls.enable", "true");
-		props.put("mail.debug", "true");
+		props.put("mail.debug", "false");
 
 		return mailSender;
 	}
